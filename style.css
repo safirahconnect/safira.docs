@@ -79,4 +79,7 @@ a {
   .header > :first-child {
     width: 100px;
   }
+  .header__nav {
+    gap: 16px;
+  }
 }
