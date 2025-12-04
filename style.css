@@ -47,7 +47,7 @@ a {
 
 @media (max-width: 680px) {
   .header > :first-child {
-    width: 100px;
+    width: 120px;
   }
   .header {
     flex-direction: column;
@@ -72,5 +72,11 @@ a {
 @media (max-width: 400px) {
   .header__nav li a {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header > :first-child {
+    width: 100px;
   }
 }
