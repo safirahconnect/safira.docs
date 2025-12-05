@@ -1,0 +1,63 @@
+.extra--bg {
+  background: #70f;
+}
+
+.extra {
+  padding-block: 60px;
+  text-align: center;
+  color: #fbfaff;
+}
+
+.extra > p > a {
+  color: inherit;
+  font-family: Copse;
+  text-decoration: underline;
+}
+
+.extra > p > span {
+  font-family: Copse;
+}
+
+.extra > * + * {
+  margin-top: 1em;
+}
+
+.extra > :first-child {
+  font-family: Copse;
+  font-size: 3.75rem;
+}
+
+.extra > p {
+  font-family: Mali;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 960px) {
+  .extra > :first-child {
+    font-size: 3rem;
+  }
+  .extra > p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .extra {
+    padding-block: 40px;
+  }
+  .extra > :first-child {
+    font-size: 2.75rem;
+  }
+  .extra > p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .extra > :first-child {
+    font-size: 2.25rem;
+  }
+  .extra > p {
+    font-size: 1.25rem;
+  }
+}

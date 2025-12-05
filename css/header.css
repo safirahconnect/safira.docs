@@ -35,12 +35,12 @@
   .header__menu a {
     text-transform: uppercase;
     letter-spacing: 0.05rem;
-    background: #107;
-    color: #fbfaff;
+    background: #f0eff8;
+    color: #131317;
   }
   .header__menu a:hover {
-    background: #070033;
-    color: #fbfaff;
+    background: #cccbd5;
+    color: #131317;
   }
 }
 
