@@ -20,6 +20,10 @@ a {
   display: inline-block;
 }
 
+span {
+  display: inline-block;
+}
+
 img {
   display: block;
   max-width: 100%;
