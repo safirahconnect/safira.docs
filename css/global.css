@@ -3,7 +3,10 @@
 }
 
 body,
-ul {
+ul,
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -15,6 +18,11 @@ ul {
 a {
   text-decoration: none;
   display: inline-block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .container {
