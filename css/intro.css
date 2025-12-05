@@ -98,8 +98,12 @@
   .intro__content > :nth-child(2) {
     font-size: 1.25rem;
   }
+  .intro__content > :last-child {
+    flex-direction: column;
+    text-align: center;
+  }
   .intro__content > :last-child a {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   .intro__img > * {
     width: 380px;

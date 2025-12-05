@@ -1,8 +1,11 @@
 export default function initSmoothScroll() {
-  const btn = document.querySelector("[data-nav='smooth']");
+  const btns = document.querySelectorAll("[data-nav='smooth']");
   
-  if(btn) {
-  btn.addEventListener("click", activeSmoothScroll);
+  if (btns.length) {
+    btns.forEach((btn) => {
+      btn.addEventListener("click", activeSmoothScroll);
+    });
+  }
 
   function activeSmoothScroll(e) {
     e.preventDefault();
@@ -14,5 +17,4 @@ export default function initSmoothScroll() {
       block: "start",
     });
   }
-}
 }

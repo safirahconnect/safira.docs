@@ -1,0 +1,92 @@
+.materiais__lista {
+  padding-block: 60px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.materiais__item > * + * {
+  margin-top: 1em;
+}
+
+.materiais__item > :first-child {
+  font-size: 2rem;
+  font-family: "Mali";
+}
+
+.materiais__item > :nth-child(2) {
+  width: 360px;
+}
+
+.materiais__item > :last-child {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+.materiais__item > p {
+  font-family: Copse;
+  font-size: 1.5rem;
+  color: #a7a6b2;
+}
+
+.materiais__item > :last-child a {
+  font-family: Copse;
+  font-size: 1.5rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 0.5em 1em;
+}
+
+.materiais__item > :last-child a:first-of-type {
+  background: #70f;
+  color: #fbfaff;
+}
+
+.materiais__item > :last-child a:first-of-type:hover {
+  background: #107;
+}
+
+.materiais__item > :last-child a:last-of-type {
+  background: #dedde8;
+  color: #070033;
+}
+
+.materiais__item > :last-child a:last-of-type:hover {
+  background: #a7a6b2;
+}
+
+@media (max-width: 960px) {
+  .materiais__item > :first-child {
+    font-size: 1.75rem;
+  }
+  .materiais__item > :nth-child(2) {
+    width: 280px;
+  }
+  .materiais__item > :last-child a,
+  .materiais__item > p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .materiais {
+    padding-block: 40px;
+  }
+
+  .materiais__lista {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .materiais__item > :first-child {
+    font-size: 1.25rem;
+  }
+  .materiais__item > :last-child a,
+  .materiais__item > p {
+    font-size: 1rem;
+  }
+}
