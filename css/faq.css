@@ -1,0 +1,97 @@
+.faq--bg {
+  background: #70f;
+}
+
+.faq {
+  padding-block: 60px;
+}
+
+.perguntas > * + * {
+  margin-top: 20px;
+}
+
+.pergunta > * + * {
+  margin-top: 1em;
+}
+
+.pergunta button {
+  font-family: "Copse";
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  background: #fbfaff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.pergunta button::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  background: url("../icon/seta.svg") no-repeat;
+  transition: transform 0.3s;
+}
+
+.js .pergunta button:hover::after,
+.js [data-dt="accordion"].active button::after {
+  transform: rotate(180deg);
+}
+
+.pergunta button:hover {
+  background: #dedde8;
+}
+
+.pergunta dd {
+  max-width: 800px;
+  font-family: "Mali";
+  font-size: 1.5rem;
+  color: #fbfaff;
+}
+
+.js .pergunta dd {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  opacity: 0;
+}
+
+.js .pergunta dd.active {
+  opacity: 1;
+  max-height: 300px;
+}
+
+.pergunta dd a,
+.pergunta dd span {
+  font-family: "Copse";
+  color: #fbfaff;
+}
+
+.pergunta dd a {
+  text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+  .faq {
+    padding-block: 40px;
+  }
+  .pergunta button,
+  .pergunta dd {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pergunta button,
+  .pergunta dd {
+    font-size: 0.875rem;
+  }
+
+  .pergunta button::after {
+    background: url(../icon/seta-mobile.svg) no-repeat;
+    width: 14px;
+    height: 8px;
+  }
+}

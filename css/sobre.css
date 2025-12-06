@@ -54,7 +54,7 @@
   display: inline-block;
   width: 24px;
   height: 12px;
-  background: url("../icon/seta.svg") no-repeat;
+  background: url("../icon/check.svg") no-repeat;
 }
 
 @media (max-width: 960px) {

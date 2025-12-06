@@ -6,12 +6,17 @@ body,
 ul,
 h1,
 h2,
-p {
+h3,
+p,
+ul,
+button,
+dl,
+dd {
   margin: 0;
+  padding: 0;
 }
 
 ul {
-  padding: 0;
   list-style: none;
 }
 
@@ -27,6 +32,15 @@ span {
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .container {
