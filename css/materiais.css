@@ -9,6 +9,23 @@
   margin-top: 1em;
 }
 
+.materiais__item > :first-child::before {
+  content: "+ de 5 horas de curso";
+  display: block;
+  font-family: "Mali";
+  font-size: 1rem;
+  background: #70f;
+  color: #fbfaff;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  width: fit-content;
+}
+
+.materiais__item:nth-of-type(2) > :first-child::before {
+  content: "Em produção";
+  background: orangered;
+}
+
 .materiais__item > :first-child {
   font-size: 2rem;
   font-family: "Mali";
@@ -56,6 +73,31 @@
   background: #a7a6b2;
 }
 
+.materiais__item__lista {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-family: "Copse";
+}
+
+.materiais__item__lista li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 4px;
+}
+
+.materiais__item__lista li::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+  background: url("../icon/check.svg") no-repeat;
+}
+
+.materiais__item__lista > * + * {
+  margin-top: 1em;
+}
+
 @media (max-width: 960px) {
   .materiais__item > :first-child {
     font-size: 1.75rem;
@@ -88,5 +130,8 @@
   .materiais__item > :last-child a,
   .materiais__item > p {
     font-size: 1rem;
+  }
+  .materiais__item__lista {
+    font-size: 1.25rem;
   }
 }
