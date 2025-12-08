@@ -14,7 +14,7 @@
   display: block;
   font-family: "Mali";
   font-size: 1rem;
-  background: #70f;
+  background: green;
   color: #fbfaff;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
@@ -119,7 +119,6 @@
   .materiais__lista {
     grid-template-columns: 1fr;
     gap: 60px;
-    justify-items: center;
   }
 }
 
