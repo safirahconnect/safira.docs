@@ -22,7 +22,7 @@
 }
 
 .materiais__item:nth-of-type(2) > :first-child::before {
-  content: "Em produção";
+  content: "Em produção - 40% feito";
   background: orangered;
 }
 
@@ -71,6 +71,12 @@
 
 .materiais__item > :last-child a:last-of-type:hover {
   background: #a7a6b2;
+}
+
+.materiais__item:last-of-type > :last-child a:last-of-type {
+  background: #f0eff8;
+  color: #5e5d68;
+  pointer-events: none;
 }
 
 .materiais__item__lista {
