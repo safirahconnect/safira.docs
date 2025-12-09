@@ -22,7 +22,7 @@
 }
 
 .materiais__item:nth-of-type(2) > :first-child::before {
-  content: "Em produção - 40% feito";
+  content: "Em produção - 60% feito";
   background: orangered;
 }
 
