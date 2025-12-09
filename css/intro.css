@@ -26,15 +26,18 @@
 }
 
 .intro__content > :last-child {
-  display: flex;
-  gap: 1.25rem;
+  font-family: Copse;
+  background: #070033;
+  color: #fbfaff;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
 }
 
-.intro__content > :last-child a {
-  font-family: Copse;
-  font-size: 1.5rem;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  padding: 0.5em 1em;
+.intro__content > :last-child:hover {
+  background: #107;
+  color: #fbfaff;
 }
 
 .intro__content > :last-child a:first-of-type {
@@ -69,9 +72,6 @@
   .intro__content > :nth-child(2) {
     font-size: 1.75rem;
   }
-  .intro__content > :last-child a {
-    font-size: 1.25rem;
-  }
 }
 
 @media (max-width: 680px) {
@@ -86,6 +86,11 @@
   .intro__content > :nth-child(2) {
     font-size: 1.5rem;
   }
+  .intro__content > :last-child {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
   .intro__img > * {
     width: 420px;
   }
@@ -98,12 +103,9 @@
   .intro__content > :nth-child(2) {
     font-size: 1.25rem;
   }
+
   .intro__content > :last-child {
-    flex-direction: column;
-    text-align: center;
-  }
-  .intro__content > :last-child a {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .intro__img > * {
     width: 380px;
