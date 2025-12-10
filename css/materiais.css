@@ -5,6 +5,15 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.materiais__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.materiais__item__lista {
+  flex: 1;
+}
+
 .materiais__item > * + * {
   margin-top: 1em;
 }
@@ -73,7 +82,7 @@
   background: #a7a6b2;
 }
 
-.materiais__item:last-of-type > :last-child a:last-of-type {
+.materiais__item:last-of-type > :last-child a {
   background: #f0eff8;
   color: #5e5d68;
   pointer-events: none;
