@@ -48,3 +48,8 @@ button {
   margin: 0 auto;
   padding-inline: 40px;
 }
+
+#previas.container {
+  max-width: 1400px;
+  padding-inline: 32px;
+}

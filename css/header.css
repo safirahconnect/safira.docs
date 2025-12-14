@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .header__menu {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .header__menu a {
@@ -26,10 +27,12 @@
   }
   .header {
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 2rem;
   }
   .header__menu {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.25rem;
   }
   .header__menu a {

@@ -62,24 +62,12 @@
   font-size: 1.5rem;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   padding: 0.5em 1em;
-}
-
-.materiais__item > :last-child a:first-of-type {
   background: #70f;
   color: #fbfaff;
 }
 
-.materiais__item > :last-child a:first-of-type:hover {
+.materiais__item > :last-child a:hover {
   background: #107;
-}
-
-.materiais__item > :last-child a:last-of-type {
-  background: #dedde8;
-  color: #070033;
-}
-
-.materiais__item > :last-child a:last-of-type:hover {
-  background: #a7a6b2;
 }
 
 .materiais__item:last-of-type > :last-child a {
