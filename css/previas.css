@@ -62,6 +62,16 @@
   pointer-events: none;
 }
 
+.previas__text {
+  font-family: Mali;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.previas__text a {
+  font-family: Copse;
+}
+
 @media (max-width: 960px) {
   .previas > h2 {
     font-size: 3rem;
@@ -74,6 +84,9 @@
     grid-template-columns: 1fr;
     gap: 60px;
   }
+  .previas__text {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 680px) {
@@ -82,6 +95,9 @@
   }
   .previas__item > :last-child a {
     font-size: 1.25rem;
+  }
+  .previas__text {
+    font-size: 2rem;
   }
 }
 
@@ -95,11 +111,8 @@
   .previas__item > :last-child a {
     font-size: 1rem;
   }
-  /* .materiais__item > :last-child a,
-  .materiais__item > p {
-    font-size: 1rem;
+
+  .previas__text {
+    font-size: 1.5rem;
   }
-  .materiais__item__lista {
-    font-size: 1.25rem;
-  } */
 }
