@@ -31,7 +31,7 @@
 }
 
 .materiais__item:nth-of-type(2) > :first-child::before {
-  content: "Gravando aulas - 97% pronto";
+  content: "Gravando questões - 99% pronto";
   background: orangered;
 }
 
