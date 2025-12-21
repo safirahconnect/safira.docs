@@ -1,0 +1,32 @@
+.ratings {
+  background: #070033;
+  color: #fbfaff;
+  padding-block: 20px;
+}
+
+.ratings__list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(calc(40rem * 999 - 100% * 999), 100%), 1fr)
+  );
+  gap: 2rem;
+  align-items: center;
+}
+
+.ratings__list > * {
+  text-align: center;
+  font-family: "Mali";
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.ratings__list span {
+  font-family: "Copse";
+}
+
+@media (max-width: 480) {
+  .ratings__list > * {
+    font-size: 1rem;
+  }
+}

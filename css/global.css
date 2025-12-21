@@ -16,6 +16,25 @@ dd {
   padding: 0;
 }
 
+body > :first-child {
+  text-align: center;
+  padding: 1em 0.5em;
+  background: #70f;
+  color: #fff;
+  font-family: "Copse";
+}
+
+body > :first-child p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body > :first-child span {
+  font-family: "Mali";
+}
+
 ul {
   list-style: none;
 }
