@@ -29,18 +29,18 @@
 }
 
 .materiais__item:last-child > :first-child::before {
-  content: "RECOMENDADO";
+  content: "RECOMENDADO - Melhor Custo Benefício 🌟";
   background: green;
   color: #fff;
   border: none;
 }
 
 .materiais__item:first-child > :first-child::before {
-  content: "+ de 5 HORAS de curso";
+  content: "+ de 5 HORAS de curso! ⏰";
 }
 
 .materiais__item:nth-of-type(2) > :first-child::before {
-  content: "+ de 9 HORAS de curso";
+  content: "+ de 9 HORAS de curso! ⏰";
 }
 
 .materiais__item > :first-child {
