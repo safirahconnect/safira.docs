@@ -62,7 +62,8 @@
   text-align: center;
 }
 
-.previas__text a {
+.previas__text a,
+.previas__text span {
   font-family: Copse;
 }
 
