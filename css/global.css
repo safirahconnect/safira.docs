@@ -35,6 +35,11 @@ body > :first-child span {
   font-family: "Mali";
 }
 
+body > :first-child a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
 }

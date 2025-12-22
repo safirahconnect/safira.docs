@@ -56,12 +56,6 @@
   background: #107;
 }
 
-.previas__item:last-of-type > :last-child a {
-  background: #f0eff8;
-  color: #5e5d68;
-  pointer-events: none;
-}
-
 .previas__text {
   font-family: Mali;
   font-size: 3rem;

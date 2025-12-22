@@ -1,17 +1,16 @@
 .materiais__lista {
   padding-block: 60px;
   display: grid;
-  gap: 40px;
-  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  grid-template-columns: auto;
+  justify-items: center;
 }
 
 .materiais__item {
+  max-width: 656px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.materiais__item__lista {
-  flex: 1;
 }
 
 .materiais__item > * + * {
@@ -19,29 +18,38 @@
 }
 
 .materiais__item > :first-child::before {
-  content: "+ de 5 horas de curso";
   display: block;
   font-family: "Mali";
   font-size: 1rem;
-  background: green;
-  color: #fbfaff;
+  color: #070033;
+  border: 2px solid #070033;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
   width: fit-content;
 }
 
+.materiais__item:first-child > :first-child::before {
+  content: "RECOMENDADO - 14 HORAS DE CURSO ";
+  background: green;
+  color: #fff;
+  border: none;
+}
+
 .materiais__item:nth-of-type(2) > :first-child::before {
-  content: "Gravando questões - 99% pronto";
-  background: orangered;
+  content: "+ de 5 HORAS de curso";
+}
+
+.materiais__item:last-of-type > :first-child::before {
+  content: "+ de 9 HORAS de curso";
 }
 
 .materiais__item > :first-child {
   font-size: 2rem;
-  font-family: "Mali";
+  font-family: "Copse";
 }
 
 .materiais__item > :nth-child(2) {
-  width: 360px;
+  width: 420px;
 }
 
 .materiais__item > :last-child {
@@ -68,12 +76,6 @@
 
 .materiais__item > :last-child a:hover {
   background: #107;
-}
-
-.materiais__item:last-of-type > :last-child a {
-  background: #f0eff8;
-  color: #5e5d68;
-  pointer-events: none;
 }
 
 .materiais__item__lista {
