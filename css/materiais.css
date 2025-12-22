@@ -28,18 +28,18 @@
   width: fit-content;
 }
 
-.materiais__item:first-child > :first-child::before {
-  content: "RECOMENDADO - 14 HORAS DE CURSO ";
+.materiais__item:last-child > :first-child::before {
+  content: "RECOMENDADO";
   background: green;
   color: #fff;
   border: none;
 }
 
-.materiais__item:nth-of-type(2) > :first-child::before {
+.materiais__item:first-child > :first-child::before {
   content: "+ de 5 HORAS de curso";
 }
 
-.materiais__item:last-of-type > :first-child::before {
+.materiais__item:nth-of-type(2) > :first-child::before {
   content: "+ de 9 HORAS de curso";
 }
 
