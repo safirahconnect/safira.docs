@@ -17,6 +17,13 @@
   margin-top: 1em;
 }
 
+.materiais__item:last-child {
+  background: #070033;
+  color: #fbfaff;
+  padding: 2rem;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
 .materiais__item > :first-child::before {
   display: block;
   font-family: "Mali";
@@ -50,6 +57,10 @@
 
 .materiais__item > :nth-child(2) {
   width: 420px;
+}
+
+.materiais__item:last-child > :nth-child(2) {
+  width: 100%;
 }
 
 .materiais__item > :last-child {
