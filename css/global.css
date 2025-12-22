@@ -40,6 +40,10 @@ body > :first-child a {
   text-decoration: underline;
 }
 
+body > :first-child a:visited {
+  color: #fff;
+}
+
 ul {
   list-style: none;
 }
