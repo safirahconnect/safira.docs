@@ -24,6 +24,7 @@
   padding: 2rem;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  grid-template-rows: auto;
 }
 
 .materiais__item > :first-child::before {
