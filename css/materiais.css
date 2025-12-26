@@ -134,6 +134,10 @@
   gap: 4px;
 }
 
+.materiais__item:last-child > .materiais__item__lista li {
+  grid-template-columns: 1fr;
+}
+
 .materiais__item__lista li::before {
   content: "";
   display: inline-block;
@@ -194,8 +198,13 @@
 
   .materiais__item:last-child {
     background: none;
+    padding: 0.5em;
     color: #070033;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .materiais__item:last-child > .materiais__item__lista {
+    text-align: left;
   }
 }
 
