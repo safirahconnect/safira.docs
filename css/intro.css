@@ -48,6 +48,15 @@
   object-position: right;
 }
 
+@media (max-width: 1120px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro__img {
+    display: none;
+  }
+}
+
 @media (max-width: 960px) {
   .intro__content > :first-child {
     font-size: 3rem;
