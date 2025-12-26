@@ -54,7 +54,7 @@
   .header__menu {
     gap: 1rem;
   }
-  .header__menu li a {
-    font-size: 0.875rem;
+  .header__menu a {
+    font-size: 1rem;
   }
 }

@@ -77,7 +77,6 @@
   .quem > :last-child {
     font-size: 1.25rem;
     letter-spacing: 0.05rem;
-    text-transform: capitalize;
   }
 }
 
@@ -87,10 +86,6 @@
   }
   .quem > p {
     font-size: 1.25rem;
-  }
-
-  .quem > :last-child {
-    font-size: 0.875rem;
   }
   .quem__lista {
     font-size: 1.25rem;

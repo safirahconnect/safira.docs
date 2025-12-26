@@ -98,9 +98,6 @@
 }
 
 @media (max-width: 480px) {
-  .sobre__info > a:last-child {
-    font-size: 1rem;
-  }
   .sobre__info > p,
   .sobre__info > ul {
     font-size: 1.25rem;

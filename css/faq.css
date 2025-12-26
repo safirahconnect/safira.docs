@@ -86,7 +86,7 @@
 @media (max-width: 480px) {
   .pergunta button,
   .pergunta dd {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .pergunta button::after {

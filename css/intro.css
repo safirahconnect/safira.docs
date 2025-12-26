@@ -72,7 +72,6 @@
   .intro__content > :last-child {
     font-size: 1.25rem;
     letter-spacing: 0.05rem;
-    text-transform: capitalize;
   }
   .intro__img > * {
     width: 420px;
@@ -85,10 +84,6 @@
   }
   .intro__content > :nth-child(2) {
     font-size: 1.25rem;
-  }
-
-  .intro__content > :last-child {
-    font-size: 0.875rem;
   }
   .intro__img > * {
     width: 380px;
