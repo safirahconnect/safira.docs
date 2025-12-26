@@ -57,6 +57,22 @@
   background: url("../icon/check.svg") no-repeat;
 }
 
+.sobre__info > a:last-child {
+  font-family: Copse;
+  background: #070033;
+  color: #fbfaff;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 0.5em 1em;
+}
+
+.sobre__info > a:last-child:hover {
+  background: #107;
+  color: #fbfaff;
+}
+
 @media (max-width: 960px) {
   .sobre__info > p {
     font-size: 1.75rem;
@@ -69,19 +85,22 @@
     padding-block: 40px;
   }
 
-  .sobre__img {
-    order: 1;
-  }
-
   .sobre__img > * {
     height: 400px;
   }
   .sobre__info > p {
     font-size: 1.5rem;
   }
+
+  .sobre__info > a:last-child {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .sobre__info > a:last-child {
+    font-size: 1rem;
+  }
   .sobre__info > p,
   .sobre__info > ul {
     font-size: 1.25rem;

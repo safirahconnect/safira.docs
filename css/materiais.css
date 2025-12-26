@@ -1,13 +1,37 @@
-.materiais__lista {
+.materiais {
   padding-block: 60px;
+}
+
+.materiais > h2 {
+  font-family: Copse;
+  font-size: 3.75rem;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+.materiais > p {
+  font-family: Mali;
+  font-size: 2rem;
+}
+
+.materiais > p span {
+  font-family: Copse;
+}
+
+.materiais > p + p {
+  margin-top: 1em;
+}
+
+.materiais__lista {
   display: grid;
   gap: 60px;
   grid-template-columns: auto auto;
   justify-items: center;
+  margin-top: 3em;
 }
 
 .materiais__item {
-  max-width: 656px;
+  max-width: 600px;
   width: 100%;
   display: grid;
   grid-template-rows: 160px auto 1fr auto;
@@ -38,7 +62,7 @@
 }
 
 .materiais__item:last-child > :first-child::before {
-  content: "RECOMENDADO - Melhor Custo Benefício 🌟";
+  content: "MELHOR ESCOLHA 🌟";
   background: green;
   color: #fff;
   border: none;
@@ -90,6 +114,7 @@
   padding: 0.5em 1em;
   background: #70f;
   color: #fbfaff;
+  text-transform: capitalize;
 }
 
 .materiais__item > :last-child a:hover {
@@ -126,6 +151,14 @@
 }
 
 @media (max-width: 960px) {
+  .materiais > h2 {
+    font-size: 3rem;
+  }
+
+  .materiais > p {
+    font-size: 1.75rem;
+  }
+
   .materiais__item > :first-child {
     font-size: 1.75rem;
   }
@@ -143,6 +176,13 @@
     padding-block: 40px;
   }
 
+  .materiais > h2 {
+    font-size: 2.75rem;
+  }
+  .materiais > p {
+    font-size: 1.5rem;
+  }
+
   .materiais__lista {
     grid-template-columns: 1fr;
     gap: 60px;
@@ -154,6 +194,12 @@
 }
 
 @media (max-width: 480px) {
+  .materiais > h2 {
+    font-size: 2.25rem;
+  }
+  .materiais > p {
+    font-size: 1.25rem;
+  }
   .materiais__item > :first-child {
     font-size: 1.25rem;
   }

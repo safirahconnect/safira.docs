@@ -1,0 +1,98 @@
+.quem {
+  padding-block: 60px;
+  text-align: center;
+  color: #070033;
+}
+
+.quem > :first-child {
+  text-align: center;
+  font-family: Copse;
+  font-size: 3.75rem;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+.quem > :first-child span {
+  color: #70f;
+}
+
+.quem > p {
+  font-family: Mali;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.quem > p span {
+  font-family: Copse;
+  color: #70f;
+}
+
+.quem__lista {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-family: "Copse";
+  margin-bottom: 1em;
+}
+
+.quem__lista > * + * {
+  margin-top: 1em;
+}
+
+.quem > :last-child {
+  font-family: Copse;
+  background: #070033;
+  color: #fbfaff;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 0.5em 1em;
+}
+
+.quem > :last-child:hover {
+  background: #107;
+  color: #fbfaff;
+}
+
+@media (max-width: 960px) {
+  .quem > :first-child {
+    font-size: 3rem;
+  }
+  .quem > p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .quem {
+    padding-block: 40px;
+  }
+
+  .quem > :first-child {
+    font-size: 2.75rem;
+  }
+  .quem > p {
+    font-size: 1.5rem;
+  }
+  .quem > :last-child {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 480px) {
+  .quem > :first-child {
+    font-size: 2.25rem;
+  }
+  .quem > p {
+    font-size: 1.25rem;
+  }
+
+  .quem > :last-child {
+    font-size: 0.875rem;
+  }
+  .quem__lista {
+    font-size: 1.25rem;
+  }
+}
