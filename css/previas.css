@@ -22,7 +22,7 @@
 
 .previas__item {
   display: grid;
-  grid-template-rows: 70px auto auto;
+  grid-template-rows: 80px auto 1fr;
 }
 
 .previas__item > * + * {
