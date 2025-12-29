@@ -31,6 +31,47 @@
   margin-top: 2rem;
 }
 
+.materiais__content__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.materiais__content {
+  background: #070033;
+  color: #fbfaff;
+  padding: 2rem;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  font-family: Mali;
+  margin-bottom: 2rem;
+}
+
+.materiais__content > div {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+}
+
+.materiais__content h3 {
+  font-family: Copse;
+  font-size: 1.75rem;
+}
+
+.materiais__content > div > * + * {
+  margin-top: 1em;
+}
+
+.materiais__content ul {
+  font-size: 1.25rem;
+}
+.materiais__content ul > div {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.materiais__content ul > * + * {
+  margin-top: 1em;
+}
+
 .materiais__lista {
   display: grid;
   gap: 60px;
@@ -72,8 +113,8 @@
   width: fit-content;
 }
 
-.materiais__item:last-child > :first-child::before {
-  content: "MELHOR ESCOLHA 🌟";
+.materiais__item > :first-child::before {
+  content: " + DE 50% DE DESCONTO 😮";
   background: green;
   color: #fff;
   border: none;
@@ -153,7 +194,7 @@
   background: url("../icon/check.svg") no-repeat;
 }
 
-.materiais__item:last-child .materiais__item__lista li::before {
+.materiais__item .materiais__item__lista li::before {
   background: none;
 }
 
@@ -168,6 +209,14 @@
 
   .materiais > p {
     font-size: 1.75rem;
+  }
+
+  .materiais__content__list {
+    grid-template-columns: 1fr;
+  }
+
+  .materiais__content > div {
+    grid-template-rows: auto;
   }
 
   .materiais__item > :first-child {
@@ -204,12 +253,12 @@
     font-size: 1.25rem;
   }
 
-  .materiais__item:last-child {
+  .materiais__item {
     padding: 1em;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
   }
 
-  .materiais__item:last-child > .materiais__item__lista {
+  .materiais__item > .materiais__item__lista {
     text-align: left;
   }
 }
@@ -220,6 +269,10 @@
   }
   .materiais > p {
     font-size: 1.25rem;
+  }
+
+  .materiais__content h3 {
+    font-size: 1.5rem;
   }
   .materiais__item > :first-child {
     font-size: 1.25rem;
