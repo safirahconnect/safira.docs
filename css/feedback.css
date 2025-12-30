@@ -5,11 +5,10 @@
 }
 
 .feedback h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
+  font-size: 3.75rem;
+  margin-bottom: 2rem;
   font-family: "Copse";
 }
-
 .carousel {
   position: relative;
   max-width: 420px;
@@ -38,6 +37,7 @@
   display: flex;
   justify-content: center;
   margin-top: 12px;
+  margin-bottom: 2rem;
 }
 
 .carousel-dots button {
@@ -66,7 +66,29 @@
   padding: 0.5em 1em;
 }
 
-.feedback > :last-child:hover {
+.feedback > a:hover {
   background: #107;
   color: #fbfaff;
+}
+
+@media (max-width: 960px) {
+  .feedback > h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .feedback > h2 {
+    font-size: 2.75rem;
+  }
+  .feedback > a {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback > h2 {
+    font-size: 2.25rem;
+  }
 }

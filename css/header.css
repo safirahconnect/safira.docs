@@ -21,10 +21,7 @@
   color: #70f;
 }
 
-@media (max-width: 680px) {
-  .header > :first-child {
-    width: 120px;
-  }
+@media (max-width: 960px) {
   .header {
     flex-direction: column;
     gap: 2rem;
@@ -47,9 +44,15 @@
   }
 }
 
+/* @media (max-width: 680px) {
+  .header > :first-child {
+    width: 120px;
+  }
+} */
+
 @media (max-width: 480px) {
   .header > :first-child {
-    width: 100px;
+    width: 120px;
   }
   .header__menu {
     gap: 1rem;
