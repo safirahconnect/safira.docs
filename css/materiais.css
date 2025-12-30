@@ -27,7 +27,7 @@
   display: block;
   width: 100%;
   height: 4px;
-  background: #70f;
+  background: #110077;
   margin-top: 2rem;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .materiais__content {
-  background: #070033;
+  background: #110077;
   color: #fbfaff;
   padding: 2rem;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
