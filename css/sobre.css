@@ -1,128 +1,48 @@
 .sobre--bg {
-  background: #f0eff8;
+  background: #fff;
+  padding-block: 40px;
 }
 
 .sobre {
-  padding-block: 60px;
-  display: grid;
-  gap: 40px;
-}
-
-.sobre__info__video {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 40px;
 }
 
-.sobre__media > * + * {
-  margin-top: 2rem;
-}
-
-.sobre__media {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
-}
-
-.sobre__media iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.sobre__info__video > div > * + * {
+.sobre__content > * + * {
   margin-top: 1em;
 }
 
-.sobre > p {
-  text-align: center;
-}
-
-.sobre > p,
-.sobre__info__video div p {
-  font-family: Mali;
-  font-size: 2rem;
-}
-
-.sobre__info__video > div > ul {
-  font-family: Copse;
+.sobre__content > p {
+  font-family: "Mali";
   font-size: 1.5rem;
 }
 
-.sobre__info__video > div > ul > * + * {
-  margin-top: 1em;
+.sobre__img > * {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.sobre__info__video > div > ul > li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.sobre__info__video > div > ul > li::before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 12px;
-  background: url("../icon/check.svg") no-repeat;
-}
-
-.sobre__info__video > div > a:last-child {
-  font-family: Copse;
-  background: #070033;
-  color: #fbfaff;
-  text-transform: capitalize;
-  letter-spacing: 0.05rem;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  padding: 0.5em 1em;
-}
-
-.sobre__info__video > div > a:last-child:hover {
-  background: #107;
-  color: #fbfaff;
-}
-
-@media (max-width: 960px) {
-  .sobre,
-  .sobre__info__video {
-    gap: 20px;
+@media (max-width: 680px) {
+  .sobre--bg {
+    padding-block: 20px;
   }
 
-  .sobre > p,
-  .sobre__info__video div p {
-    font-size: 1.75rem;
-  }
-  .sobre__info__video {
+  .sobre {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 680px) {
-  .sobre {
-    padding-block: 40px;
-  }
-
-  .sobre > p,
-  .sobre__info__video div p {
-    font-size: 1.5rem;
-  }
-
-  .sobre__info__video > div > a:last-child {
-    font-size: 1.25rem;
-  }
-}
-
 @media (max-width: 480px) {
-  .sobre > p,
-  .sobre__info__video div p {
-    font-size: 1.25rem;
+  .sobre__content > p {
+    font-family: "Mali";
+    font-size: 1rem;
   }
 
-  .sobre__info__video > div > ul {
-    font-size: 1.25rem;
+  .sobre__img > * {
+    height: 320px;
   }
 }

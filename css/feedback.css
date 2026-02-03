@@ -1,18 +1,16 @@
-.feedback {
-  text-align: center;
-  padding-block: 30px;
+.feedback--bg {
+  padding-block: 40px;
   background: #fff;
 }
 
-.feedback h2 {
-  font-size: 3.75rem;
-  margin-bottom: 2rem;
-  font-family: "Copse";
+.feedback {
+  text-align: center;
 }
+
 .carousel {
   position: relative;
-  max-width: 420px;
-  margin: 0 auto 30px;
+  max-width: 600px;
+  margin: 0 auto 0;
   overflow: hidden;
   border-radius: 14px;
 }
@@ -37,7 +35,6 @@
   display: flex;
   justify-content: center;
   margin-top: 12px;
-  margin-bottom: 2rem;
 }
 
 .carousel-dots button {
@@ -54,41 +51,14 @@
   background: #333;
 }
 
-/* CTA */
-.feedback > a {
-  font-family: Copse;
-  background: #070033;
-  color: #fbfaff;
-  text-transform: capitalize;
-  letter-spacing: 0.05rem;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  padding: 0.5em 1em;
-}
-
-.feedback > a:hover {
-  background: #107;
-  color: #fbfaff;
-}
-
 @media (max-width: 960px) {
-  .feedback > h2 {
-    font-size: 3rem;
+  .carousel {
+    max-width: 400px;
   }
 }
 
 @media (max-width: 680px) {
-  .feedback > h2 {
-    font-size: 2.75rem;
-  }
-  .feedback > a {
-    font-size: 1.25rem;
-    letter-spacing: 0.05rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .feedback > h2 {
-    font-size: 2.25rem;
+  .feedback--bg {
+    padding-block: 20px;
   }
 }

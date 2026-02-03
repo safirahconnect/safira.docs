@@ -1,0 +1,139 @@
+.buy {
+  padding-block: 40px;
+}
+
+.buy.container {
+  max-width: 800px;
+}
+
+.buy__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Copse;
+}
+
+.buy picture {
+  align-self: center;
+}
+
+.buy img {
+  height: 520px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.buy__flex > * + * {
+  margin-top: 1em;
+}
+
+.buy .subtitle {
+  font-family: inherit;
+  color: #fbfaff;
+  font-weight: 300;
+  text-align: center;
+}
+
+.subtitle.price {
+  font-size: 3rem;
+}
+
+.buy .subtitle strike {
+  color: red;
+}
+
+.buy__product {
+  color: #070033;
+  background-color: #eaea00;
+  padding: 1em 2em;
+  border-radius: 12px;
+}
+
+.buy__product .subtitle {
+  color: inherit;
+}
+
+.buy__product ul {
+  font-size: 2rem;
+  margin-bottom: 2em;
+}
+
+.buy__product ul > * + * {
+  margin-top: 0.5em;
+}
+
+.buy__product li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.buy__product li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #070033;
+  border-radius: 50%;
+}
+
+.buy__product a {
+  display: block;
+  background: #070033;
+  color: #fbfaff;
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+}
+
+.buy__product span {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.buy__product span::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 44px;
+}
+
+.buy__product span:first-of-type::before {
+  background: url("../icon/lock.svg") no-repeat;
+}
+
+.buy__product span:last-of-type::before {
+  background: url("../icon/money.svg") no-repeat;
+}
+
+@media (max-width: 680px) {
+  .buy img {
+    height: 220px;
+  }
+  .subtitle.price {
+    font-size: 2.25rem;
+  }
+  .buy__product ul {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .buy.container {
+    padding-inline: 1rem;
+  }
+  .subtitle.price {
+    font-size: 1.75rem;
+  }
+  .buy__product ul {
+    font-size: 1.25rem;
+  }
+
+  .buy__product a {
+    font-size: 1.25rem;
+  }
+}

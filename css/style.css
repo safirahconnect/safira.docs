@@ -1,12 +1,10 @@
 @import "./global.css";
-@import "./header.css";
 @import "./intro.css";
 @import "./feedback.css";
 @import "./sobre.css";
-@import "./extra.css";
-@import "./quem.css";
 @import "./ratings.css";
-@import "./materiais.css";
-@import "./previas.css";
+@import "./course.css";
+@import "./video.css";
+@import "./buy.css";
 @import "./faq.css";
 @import "./footer.css";

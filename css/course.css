@@ -1,0 +1,84 @@
+.course__area--bg {
+  padding-block: 40px;
+  background-color: #eaea00;
+}
+
+.course__area .subtitle {
+  text-align: center;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.course {
+  background-color: #070033;
+  color: #fbfaff;
+  padding: 1em 2em;
+  border-radius: 12px;
+}
+
+.course > * + *,
+.course ul > * + * {
+  margin-top: 1em;
+}
+
+.course h3 {
+  font-family: Mali;
+  font-size: 2rem;
+}
+
+.course ul {
+  font-family: Mali;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  .courses {
+    grid-template-columns: 1fr;
+  }
+
+  .courses h3 {
+    font-size: 1.5rem;
+  }
+
+  .courses ul {
+    font-size: 1.25rem;
+  }
+
+  .course {
+    position: relative;
+  }
+
+  .course::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: -40px;
+    width: 108px;
+    height: 108px;
+    background: url("../icon/brain.svg") no-repeat;
+  }
+}
+
+@media (max-width: 680px) {
+  .course__area--bg {
+    padding-block: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses h3 {
+    font-size: 1.25rem;
+  }
+
+  .courses ul {
+    font-size: 1rem;
+  }
+  .course::after {
+    display: none;
+  }
+}

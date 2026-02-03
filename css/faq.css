@@ -35,8 +35,8 @@
   transition: transform 0.3s;
 }
 
-.js .pergunta button:hover::after,
-.js [data-dt="accordion"].active button::after {
+.pergunta button:hover::after,
+[data-dt="accordion"].active button::after {
   transform: rotate(180deg);
 }
 
@@ -51,14 +51,14 @@
   color: #fbfaff;
 }
 
-.js .pergunta dd {
+.pergunta dd {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s;
   opacity: 0;
 }
 
-.js .pergunta dd.active {
+.pergunta dd.active {
   opacity: 1;
   max-height: 300px;
 }

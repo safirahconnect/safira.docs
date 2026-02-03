@@ -16,32 +16,8 @@ dd {
   padding: 0;
 }
 
-body > :first-child {
-  text-align: center;
-  padding: 1em 0.5em;
-  background: #70f;
-  color: #fff;
-  font-family: "Copse";
-}
-
-body > :first-child p {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-body > :first-child span {
-  font-family: "Mali";
-}
-
-body > :first-child a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-body > :first-child a:visited {
-  color: #fff;
+body {
+  background: linear-gradient(#070033, #4400cc);
 }
 
 ul {
@@ -72,7 +48,7 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-inline: 40px;
 }
@@ -80,4 +56,28 @@ button {
 #previas.container {
   max-width: 1400px;
   padding-inline: 32px;
+}
+
+.subtitle {
+  font-family: Mali;
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 960px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .subtitle {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 1.5rem;
+  }
 }

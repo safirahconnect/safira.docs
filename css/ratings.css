@@ -1,7 +1,7 @@
 .ratings {
   background: #070033;
   color: #fbfaff;
-  padding-block: 20px;
+  padding-block: 40px;
 }
 
 .ratings__list {
@@ -25,7 +25,13 @@
   font-family: "Copse";
 }
 
-@media (max-width: 480) {
+@media (max-width: 680px) {
+  .ratings {
+    padding-block: 20px;
+  }
+}
+
+@media (max-width: 480px) {
   .ratings__list > * {
     font-size: 1rem;
   }
