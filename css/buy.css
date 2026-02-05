@@ -37,6 +37,12 @@
 
 .subtitle.price {
   font-size: 3rem;
+  font-family: Mali;
+}
+
+.subtitle.price span {
+  font-family: Copse;
+  color: #3300a1;
 }
 
 .buy .subtitle strike {
@@ -48,6 +54,7 @@
   background-color: #eaea00;
   padding: 1em 2em;
   border-radius: 12px;
+  box-shadow: 0px 0px 8px 6px #eaea00;
 }
 
 .buy__product .subtitle {
@@ -81,33 +88,38 @@
 
 .buy__product a {
   display: block;
-  background: #070033;
+  background: #3300a1;
   color: #fbfaff;
   padding: 1em 2em;
   font-size: 1.5rem;
   text-align: center;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 1em;
+  border-radius: 8px;
 }
 
-.buy__product span {
+.buy__product a:hover {
+  background: #070033;
+}
+
+.buy__product__icon {
   display: grid;
   grid-template-columns: auto 1fr;
 }
 
-.buy__product span::before {
+.buy__product__icon::before {
   content: "";
   display: inline-block;
   width: 32px;
   height: 44px;
 }
 
-.buy__product span:first-of-type::before {
+.buy__product__icon:first-of-type::before {
   background: url("../icon/lock.svg") no-repeat;
 }
 
-.buy__product span:last-of-type::before {
-  background: url("../icon/money.svg") no-repeat;
+.buy__product__icon:last-of-type::before {
+  background: url("../icon/guarantee.svg") no-repeat;
 }
 
 @media (max-width: 680px) {
